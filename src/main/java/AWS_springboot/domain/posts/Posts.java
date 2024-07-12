@@ -1,6 +1,7 @@
 package AWS_springboot.domain.posts;
 
 
+import AWS_springboot.domain.BaseTimeEntity;
 import jakarta.persistence.*;//스프링3.0부터 javax->jakarta로 변경
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//auto increase적용
     private Long id;
