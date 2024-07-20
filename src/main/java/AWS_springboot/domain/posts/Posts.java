@@ -2,10 +2,12 @@ package AWS_springboot.domain.posts;
 
 
 import AWS_springboot.domain.BaseTimeEntity;
-import jakarta.persistence.*;//스프링3.0부터 javax->jakarta로 변경
+//import jakarta.persistence.*;//스프링3.0부터 javax->jakarta로 변경
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
