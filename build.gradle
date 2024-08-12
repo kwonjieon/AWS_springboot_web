@@ -67,7 +67,9 @@ sourceCompatibility = 11
 repositories {
     mavenCentral()
 }
-
+jar {
+    enabled = false
+}
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
