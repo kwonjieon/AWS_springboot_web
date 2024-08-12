@@ -16,9 +16,9 @@ cache:
 #push되었을때 하는 명령어
 script: "./gradlew clean build"
 before_deploy:
-  - zip -r AWS_springboot_web
+  - zip -r AWS_springBoot-web
   - mkdir -p deploy
-  - mv AWS_springboot_web.zip deploy/AWS_springboot_web.zip
+  - mv AWS_springBoot-web.zip deploy/AWS_springBoot-web.zip
 
 deploy:
   - provider: s3
