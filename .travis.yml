@@ -25,7 +25,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY #travis repo settings에서 설정한값
     secret_access_key: $AWS_SECRET_KEY #travis 에서 설정한값
     bucket: aws-springboot-test-build
-    region: ap.northeast-2
+    region: ap-northeast-2
     skip_cleanup: true
     acl: private #zip파일접근을 private으로
     local_dir: deploy #before_deploy에서 생성한 dir
