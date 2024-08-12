@@ -1,0 +1,21 @@
+language: java
+jdk:
+  openjdk11
+#master에 push될때만 수행
+branches:
+  only:
+    - master
+
+#Travis CI서버의 Home
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+#push되었을때 하는 명령어
+script: "./gradlew clean build"
+
+#CI 실행완료 시 메일로 알람
+notifications:
+  email:
+    recipients:
+      rnjswldjs0411@gmail.com
